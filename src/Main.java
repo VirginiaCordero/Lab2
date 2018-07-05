@@ -26,7 +26,7 @@ public class Main {
 		String dateFromString = scanner.nextLine();
 		Date dateFrom = new Date();
 
-		// Trapping invalid date format
+		// Converting string to date and trapping invalid date format
 		try {
 			dateFrom = formatter.parse(dateFromString);
 		} catch (ParseException e) {
@@ -41,7 +41,7 @@ public class Main {
 
 		scanner.close();
 
-		// Trapping invalid date formats
+		// Converting string to date and trapping invalid date format
 		try {
 			dateTo = formatter.parse(dateToString);
 		} catch (ParseException e) {
