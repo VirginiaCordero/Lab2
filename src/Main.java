@@ -1,4 +1,3 @@
-
 // Created by Virginia Cordero on July 2018
 
 import java.text.ParseException;
@@ -10,12 +9,20 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		runTask();
+	}
 
+	public static void runTask() {
 		Scanner scanner = new Scanner(System.in);
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
+		// User introduction to the program
+		System.out.println("-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-");
+		System.out.println("For the next exercise, you will be asked to enter two dates (one at a time).\n"
+				+ "Please consider that both dates should:\n" + "-Be formatted as 'yyyy-MM-dd'\n");
+
 		// Capturing first date
-		System.out.println("Please capture first date with format 'yyyy-MM-dd':");
+		System.out.println("Please capture the first date with format 'yyyy-MM-dd':");
 		String dateFromString = scanner.nextLine();
 		Date dateFrom = new Date();
 
